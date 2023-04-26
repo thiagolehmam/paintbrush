@@ -10,8 +10,11 @@
 
 <body>
     <canvas width="600" height="400"></canvas>
+    <br>
+    Choose a color<input type="color">
 
     <script>
+        var palette = document.querySelector('input');
         var screen = document.querySelector('canvas');
         var brush = screen.getContext('2d');
         brush.fillStyle = 'grey';
@@ -22,7 +25,7 @@
             if (draw) {
                 var x = event.pageX - screen.offsetLeft;
                 var y = event.pageY - screen.offsetTop;
-                brush.fillStyle = 'blue';
+                brush.fillStyle = palette.value; // it always take the current value of the palette!
                 brush.beginPath();
                 brush.arc(x, y, 10, 0, 2 * 3.14);
                 brush.fill();
