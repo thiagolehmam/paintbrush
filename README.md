@@ -1,5 +1,3 @@
-# paintbrush
-
 # Simple Paintbrush
 
 This is a simple project that allows to practice and review programming and logic concepts using mouse events in JavaScript. It is essentially a simplified version of a paintbrush application, and can be used to explore concepts such as event listeners, canvas rendering, and user input.
